@@ -1,13 +1,13 @@
-// Template will now be formatted in Handlebars after adding the gem and renaming
-// templates/entries/index.hbs
-
 Raffler.Views.EntriesIndex = Backbone.View.extend({
-
   template: HandlebarsTemplates['entries/index'],
+
+  initialize: function () {
+    this.collection.on('reset', this.render, this);
+  },
+
   render: function () {
     // taking div and setting the html of it
-    $(this.el).html(this.template({entries: "Ya yaaa. Template Render"}));
+    $(this.el).html(this.template({collection: this.collection}));
     return this;
   }
-
 });
