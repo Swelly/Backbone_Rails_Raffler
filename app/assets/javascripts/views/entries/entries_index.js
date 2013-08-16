@@ -6,7 +6,7 @@ Raffler.Views.EntriesIndex = Backbone.View.extend({
   template: HandlebarsTemplates['entries/index'],
   render: function () {
     // taking div and setting the html of it
-    $(this.el).html(this.template());
+    $(this.el).html(this.template({entries: "Ya yaaa. Template Render"}));
     return this;
   }
 

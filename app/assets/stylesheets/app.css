@@ -2,17 +2,19 @@ body {
   font-family: 'Arvo', serif;
   margin: 100px auto 0 100px;
   color: #74DF00;
+  /*background: url('../subtle_honey.png');*/
 }
 
 h1 {
   border-bottom: 1px dotted black;
+  width: 210px;
 }
 
 h1, h2, h3, h4 {
   color: #9e9e9e;
 }
 
-#main {
+#container {
   border-radius: 10px;
   background-color: rgba(200,200,200,0.5);
   padding: 20px;
