@@ -1,22 +1,25 @@
 body {
   font-family: 'Arvo', serif;
-  margin: 100px auto 0 100px;
-  color: #74DF00;
+  color: #5FB404;
   background-image: url('subtle_honey.png');
 }
-
-h1 {
-  border-bottom: 1px dotted black;
-  width: 210px;
-}
-
-h1, h2, h3, h4 {
-  color: #999;
+.wrapper {
+  margin: 100px auto 0 100px;
+  padding: 0;
 }
 
 #container {
   border-radius: 10px;
   background-color: rgba(255,255,255,0.9);
   padding: 20px;
-  width: 350px;
+  width: 300px;
+}
+
+h1 {
+  border-bottom: 1px dotted black;
+  width: 230px;
+}
+
+h1, h2, h3, h4 {
+  color: #999;
 }
