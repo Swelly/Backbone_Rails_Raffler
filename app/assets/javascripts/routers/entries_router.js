@@ -17,7 +17,10 @@ Raffler.Routers.Entries = Backbone.Router.extend({
   },
 
   show: function (id) {
-    alert("Hello from Router Show Number: " + id); // Ex: http://localhost:3000/#entries/1
+    // Ex: http://localhost:3000/#entries/1
+    entry = this.collection.get(id);
+    var view = new Raffler.Views.EntryShow({model: entry});
+    $('#container').html(view.render().el);
   }
 
 });
